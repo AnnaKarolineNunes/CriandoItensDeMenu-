@@ -48,7 +48,7 @@ Este projeto visa a criação de itens de menu em apps Android.
       
       </menu>
   
-- Passo 5: No main Activity.class, colocar inserir o método getMenuInflater dentro do método onCreateOptionsMenu para inflar o XML criado.
+- Passo 5: Inflar o XML no método onCreateOptionsMenu. Dentro do método onCreateOptionsMenu da classe MainActivity, utilize o método getMenuInflater para inflar o XML criado:
   ```bash
   
    @Override
@@ -58,7 +58,7 @@ Este projeto visa a criação de itens de menu em apps Android.
         return super.onCreateOptionsMenu(menu);
     }
   
-- Passo 6: criar o método onOptionsItemSelected no MainActivity.class. Lembrando que neste caso foi apenas exibida uma mensagem temporaria. Faça as adaptações necessárias. 
+- Passo 6: Implementar o método onOptionsItemSelected. Adicione o método onOptionsItemSelected à classe MainActivity para lidar com as ações dos itens do menu. Exiba mensagens temporárias ou faça as adaptações necessárias de acordo com suas necessidades:
   ```bash
 
    @Override
@@ -83,3 +83,5 @@ Este projeto visa a criação de itens de menu em apps Android.
         }
         return super.onOptionsItemSelected(item);
     }
+
+Este passo a passo deve ajudar na implementação de um menu funcional em sua aplicação Android.
